@@ -1,12 +1,36 @@
 # csv2shp
 
+
+## Features
+
+✅ Generate Shapefiles without QGIS or desktop GIS tools
+
+✅ Outputs a zipped Shapefile set : *.shp / *.shx / *.dbf / *.prj
+
+✅ Automatically handles the 10-character DBF field name limitation
+
+Generates a fields.json mapping file for original → shortened field names
+
+## Features(Ja)
+
 CSV の **lat/lon** から **Point の Shapefile（.zip）** を作る Node.js CLI / TypeScript ライブラリ。
 
-- ✅ QGIS の前処理なしで Shapefile を作れる
-- ✅ `*.shp/*.shx/*.dbf/*.prj` を zip にまとめて出力
-- ✅ DBF の **フィールド名10文字制限**を自動で回避（対応表 `fields.json` も出力）
+✅ QGIS の前処理なしで Shapefile を作れる
 
----
+✅ `*.shp/*.shx/*.dbf/*.prj` を zip にまとめて出力
+
+✅ DBF の **フィールド名10文字制限**を自動で回避（対応表 `fields.json` も出力）
+
+
+## Typical Use Cases
+
+- Preprocessing spatial data for QGIS or ArcGIS
+
+- Converting business / location CSV data into GIS-ready formats
+
+- Batch processing in Node.js or CI environments
+
+- Lightweight GIS workflows without heavy desktop tools
 
 ## Demo
 
@@ -74,3 +98,4 @@ await csv2shp({
 ## License
 
 MIT License
+
